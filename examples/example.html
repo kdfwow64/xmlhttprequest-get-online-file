@@ -1,0 +1,52 @@
+<html>
+<head>
+  <title>MSG Writer</title>
+  <style type="text/css">
+    .info-box {
+      color: #F5F5F5;
+      padding: 2em;
+    }
+
+    .wizard-msg {
+      background-color: #673AB7;
+    }
+
+    .field-block {
+      padding: 1em 2em;
+    }
+
+    .field-block .field-label {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="msg-example">
+  <div class="info-box wizard-msg">
+    1. Input attachment file Url
+  </div>
+  <div class="field-block">
+    <input type="file" class="attach_files" id="attach_files" style="display: none;" />
+    <input type="text" id="attachment1" value="http://4.bp.blogspot.com/-7JOTFGcFLtE/UQYq9ql0MVI/AAAAAAAAAKc/tV83sV567kk/s320/configuring+CD+Rom+epsxe+170.JPG" style="width: 800px;">
+    <br/>
+    <input type="text" id="attachment2" value="http://4.bp.blogspot.com/-7JOTFGcFLtE/UQYq9ql0MVI/AAAAAAAAAKc/tV83sV567kk/s320/configuring+CD+Rom+epsxe+170.JPG" style="width: 800px;">
+    <br/>
+    <button id="create">Main</button>
+    <a download="info.msg" id="downloadlink" style="display: none">Download</a>
+  </div>
+  <div class="field-block">
+    <table class="table table-border" id="file_table">
+      <thead>
+        <th>Name</th>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="../msg.writer.js"></script>
+</body>
+</html>
